@@ -11,9 +11,8 @@ main {
     max-width: 430px;
     min-width: 250px;
     display: flex;
-    height: 100vh;
     align-items: center;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 section{
@@ -21,7 +20,6 @@ section{
     height: auto;
     padding: 15px 20px;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, .1);
-
 }
 
 header h2{
@@ -166,6 +164,21 @@ header h2{
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1);
 }
 
+#message-validate {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-100px);
+    text-align: center;
+}
+
+#message-validate.error {
+    transition: .3s ease-in-out;
+    visibility: visible;
+    color: rgb(218, 26, 26);
+    opacity: 1;
+    transform: translateX(0px);
+}
+
 .addTransacoes form input::placeholder{
     font-weight: 400;
 }
@@ -184,6 +197,8 @@ header h2{
     cursor: pointer; 
     letter-spacing: .5px;
     transition: .3s ease-in-out;
+    margin-bottom: 1rem;
+
 }
 
 .addTransacoes form input[type="submit"]:hover{

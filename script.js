@@ -6,6 +6,7 @@ const h4SaldoAtual = document.querySelector('#saldo-atual');
 const form = document.getElementById("form");
 const nome = document.getElementById("nome--transacao")
 const senha = document.getElementById("senha--transacao")
+const messageValidate = document.getElementById('message-validate')
 
 const localStorageProdutos = JSON.parse(localStorage.getItem("produtos"))
 let produtos = localStorage.getItem('produtos') !== null ? localStorageProdutos : [];
@@ -41,8 +42,6 @@ function somaDosValores(){
     .reduce((ac, ini) => ac + ini, 0))
     .toFixed(2);
 
-    console.log(total)
-    
     const positivo = (pegandoPreco
     .filter(item => item > 0)
     .reduce((ac, iniciar) => ac + iniciar, 0))
@@ -62,10 +61,8 @@ const ini = ()=>{
     lista.innerHTML = "";
     nome.value = "";
     senha.value = "";
-    nome.focus();
     produtos.map(item => pegarProdutos(item));
     somaDosValores();
-    console.log(produtos)
 }
 
 const updateLocalStorage = () => {
@@ -77,11 +74,11 @@ function validar(){
         e.preventDefault();
         
         if(senha.value.trim() === "" || nome.value.trim() === ""){
-            alert("Preencha os campos");
-            return
+            return messageValidate.classList.add('error');
         }
         
         if(senha.value.trim() && nome.value.trim()){
+            messageValidate.classList.remove('error');
             
             const addLista = {
                 id: numAleatorio(), 
