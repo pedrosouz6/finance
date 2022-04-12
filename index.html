@@ -8,45 +8,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <header>
-            <h2>Controle de despesas</h2>
-        </header>
-        <article class="saldo--despesas--receitas">
-            <h4>Saldo atual</h4>
-            <h1>R$ 0.00</h1>
-            <div class="despesas--receitas">
-                <div class="receitas">
-                    <p>Receitas</p>
-                    <span class="plus">
-                        + R$0.00
-                    </span>
+    <main>
+        <section>
+            <header>
+                <h2>Controle de despesas</h2>
+            </header>
+            <article class="saldo--despesas--receitas">
+                <h4 id='saldo-atual'>Saldo atual</h4>
+                <h1>R$ 0.00</h1>
+                <div class="despesas--receitas">
+                    <div class="receitas">
+                        <p>Receitas</p>
+                        <span class="plus">
+                            + R$0.00
+                        </span>
+                    </div>
+                    <div class="despesas">
+                        <p>Despesas</p>
+                        <span class="minio">
+                            - R$0.00
+                        </span>
+                    </div>
                 </div>
-                <div class="despesas">
-                    <p>Despesas</p>
-                    <span class="minio">
-                        - R$0.00
-                    </span>
-                </div>
-            </div>
-        </article>
-        <article class="transacoes">
-            <h2>Transações</h2>
-            <ul id="lista">
-            </ul>
-        </article>
-        <article class="addTransacoes">
-            <h2>Adicionar Transação</h2>
-            <form id="form">
-                <label for="nome--transacao">Nome</label>
-                <input type="text" placeholder="Nome da transação" id="nome--transacao" class="addTransacoes--input">
-                <label for="nome--transacao">Valor</label>
-                <span class="info">(negativo - despesas, positivo + receitas)</span>
-                <input type="number" placeholder="Preço da transação" id="senha--transacao" class="addTransacoes--input">
-                <input type="submit" value="Adicionar">
-            </form>
-        </article>
-    </section>
+            </article>
+            <article class="transacoes">
+                <h2>Transações</h2>
+                <ul id="lista">
+                </ul>
+            </article>
+            <article class="addTransacoes">
+                <h2>Adicionar Transação</h2>
+                <form id="form">
+                    <label for="nome--transacao">Nome</label>
+                    <input type="text" placeholder="Nome da transação" id="nome--transacao" class="addTransacoes--input">
+                    <label for="nome--transacao">Valor</label>
+                    <span class="info">(negativo - despesas, positivo + receitas)</span>
+                    <input type="number" placeholder="Preço da transação" id="senha--transacao" class="addTransacoes--input">
+                    <input type="submit" value="Adicionar">
+                </form>
+            </article>
+        </section>
+    </main>
     <script src="./script.js"></script>
 </body>
 </html>
