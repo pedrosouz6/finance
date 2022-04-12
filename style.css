@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section{
+    width: 430px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 30px 20px;
+}
+
+header h2{
+    font-size: 16pt;
+    text-align: center;
+}
+
+.saldo--despesas--receitas{
+    margin: 2rem 0 2rem 0;
+}
+
+.saldo--despesas--receitas h4{
+    text-transform: uppercase;
+}
+
+.saldo--despesas--receitas h1{
+    font-size: 20pt;
+    color: rgb(40, 90, 226);
+    letter-spacing: -1px;
+}
+
+.despesas--receitas {
+    margin: 1rem auto;
+    width: 80%;
+    background-color: white;
+    height: 75px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+}
+
+.receitas, .despesas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.receitas p, .despesas p{
+    text-transform: uppercase;
+    font-size: 11pt;
+    font-weight: 700;
+    margin-bottom: 4px;
+} 
+
+.receitas{
+    border-right: 2px solid rgba(0, 0, 0, .2);
+}
+
+.receitas .plus, .despesas .minio{
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.despesas .minio{
+    color: rgb(218, 26, 26);
+}
+
+.receitas .plus{
+    color: rgb(40, 187, 40);
+}
+
+.transacoes h2, .addTransacoes h2{
+    color: #111;
+    font-size: 14pt;
+    margin-bottom: 1rem;
+}
+
+.transacoes h2::after, .addTransacoes h2::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, .2);
+    margin-top: 5px;
+}
+
+.transacoes ul{
+    margin-bottom: 2rem;
+    list-style: none;
+}
+
+.transacoes ul li {
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, .2);
+    padding: 8px;
+    margin-bottom: .8rem;
+    border-radius: 5px;
+    position: relative;
+}
+
+.transacoes ul li button{
+    position: absolute;
+    padding: 1px 3px;
+    background-color: rgb(218, 26, 26);
+    top: 50%;
+    left: -16px;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 12pt;
+    font-weight: 600;
+    color: white;
+    visibility: hidden;
+    transition: .3s ease-in-out;
+}
+
+.transacoes ul li:hover button, .transacoes ul li button:hover{
+    visibility: visible;
+}
+
+.transacoes ul li.plus{
+    border-right: 3px solid rgb(40, 187, 40);
+}
+
+.transacoes ul li.minio{
+    border-right: 3px solid rgb(218, 26, 26);
+}
+
+.transacoes ul li span{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 10pt;
+}
+
+.addTransacoes form label{
+    display: block;
+    font-weight: 500;
+}
+
+.addTransacoes form input{
+    margin: .5rem 0 1rem 0;
+    width: 100%;
+    height: 35px;
+    padding: 0 5px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .1);
+}
+
+.addTransacoes form input::placeholder{
+    font-weight: 400;
+}
+
+.addTransacoes form span{
+    font-size: 10pt;
+}
+
+.addTransacoes form input[type="submit"]{
+    border: 2px solid rgb(40, 90, 226);
+    background: none;
+    height: 40px;
+    color: rgb(40, 90, 226);
+    font-weight: bold;
+    font-size: 12pt;
+    cursor: pointer; 
+    letter-spacing: .5px;
+    transition: .3s ease-in-out;
+}
+
+.addTransacoes form input[type="submit"]:hover{
+    color: white;
+    background-color: rgb(40, 90, 226);
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .4)
+}
