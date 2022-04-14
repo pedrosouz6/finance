@@ -1,4 +1,4 @@
-#### Finance
+### Finance
 
 Esse projeto simples que server é para te ajudar a controlar as suas despesas.
 
