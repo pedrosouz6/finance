@@ -28,7 +28,7 @@ Esse projeto simples que eu desenvolvi para te ajudar a controlar as suas despes
   # Clone esse repositório
   $ git clone <https://github.com/pedrosouz6/finance>
   
-  # Entre na pasta e abra o index.html no navagador
+  # Entre na pasta e abra o index.html no navegador
 ```
 
 ##
