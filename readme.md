@@ -23,13 +23,12 @@ Esse projeto simples que eu desenvolvi para te ajudar a controlar as suas despes
 
 ##
 
-#### Rodando o Front-end
+#### Rodando o projeto em sua máquina
  ``` bash
   # Clone esse repositório
   $ git clone <https://github.com/pedrosouz6/finance>
   
-  # Entre na pasta e abra o index.html no navagador.
-  
+  # Entre na pasta e abra o index.html no navagador
 ```
 
 ##
