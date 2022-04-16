@@ -1,6 +1,6 @@
-### Finanças
+## Finanças
 
-#### Sobre
+### Sobre
 
 Esse projeto simples que eu desenvolvi para te ajudar a controlar as suas despesas.
 
@@ -10,7 +10,7 @@ Esse projeto simples que eu desenvolvi para te ajudar a controlar as suas despes
 
 ##
 
-#### Funcionalidades
+### Funcionalidades
 
 * Você poderá adicionar uma transação e indicar se ela é positiva(+) ou negativa(-);
 * Poderá remover qualquer transação que foi adicionada;
