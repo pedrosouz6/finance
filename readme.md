@@ -26,7 +26,7 @@ Esse projeto simples que eu desenvolvi para te ajudar a controlar as suas despes
 #### Rodando o Front-end
  ``` bash
   # Clone esse repositório
-  $ git clone <https://github.com/pedrosouz6/covid-19>
+  $ git clone <https://github.com/pedrosouz6/finance>
   
   # Acesse a pasta do projeto no terminal/cmd
   $ cd NomeDaPasta
