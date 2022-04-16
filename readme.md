@@ -28,16 +28,8 @@ Esse projeto simples que eu desenvolvi para te ajudar a controlar as suas despes
   # Clone esse repositório
   $ git clone <https://github.com/pedrosouz6/finance>
   
-  # Acesse a pasta do projeto no terminal/cmd
-  $ cd NomeDaPasta
+  # Entre na pasta e abra o index.html no navagador.
   
-  # Instale as dependências
-  $ npm install
-  
-  # Execute a aplicação em modo de desenvolvimento
-  $ npm start
-  
-  # o servidor iniciará na porta:3000 - acesse <http://localhost:3000>
 ```
 
 ##
