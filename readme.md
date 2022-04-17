@@ -1,4 +1,4 @@
-## Finanças
+## Controle de despesas
 
 ### Sobre
 
